@@ -27,4 +27,19 @@ docker images -f 'dangling=true' -q
 docker rmi $(docker images -f 'dangling=true' -q)
 ```
 
+
+### how to run
+- run using docker compose
+```
+# docker-compose.yml
+version: '3'
+services:
+  node_api:
+    container_name: node_api
+    image: milon27/node-multi-arch
+    ports:
+      - 80:2727
+```
+
+
 >> owner:  https://milon27.com
