@@ -1,0 +1,7 @@
+version: '3'
+services:
+  node_api:
+    container_name: node_api
+    build: .
+    ports:
+      - 2727:2727

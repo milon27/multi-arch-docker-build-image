@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "bp": "docker buildx build -t milon27/node-multi-arch . --platform linux/amd64,linux/arm64 --push",
+        "b": "docker buildx build -t milon27/node-multi-arch . --platform linux/amd64,linux/arm64"
+    }
+}
